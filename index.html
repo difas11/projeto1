@@ -57,6 +57,15 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+        .red {
+            background-color: red;
+        }
+        .red:hover {
+            background-color: #A00000; /* Cor mais clara ao passar o mouse (vinho mais intenso) */
+        }
+
+
+
 
         h1, h2 {
             color: #eeecf0;
@@ -163,8 +172,11 @@
         <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Curso de Python" class="course-image">
         <h3>Python</h3>
         <p>Aprenda a linguagem de programação Python, ideal para iniciantes e profissionais, com aplicações em ciência de dados, automação e muito mais.</p>
-        <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target="_blank">
+        <a href="https://learningstudioai.com/share/wzh41EpCAyJZrWm8I6vK" target="_blank">
             <button>Clique Aqui</button>
+        </a>
+        <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target="_blank">
+            <button class="red">Youtube</button>
         </a>
     </div>
     <div class="course-card" id="javascript">
@@ -206,6 +218,100 @@
 </footer>
 </body>
 </html>
+
+<div id="quiz-main">
+    <!-- Quiz 1 -->
+    <section id="quiz-container">
+        <h2>O que é "if"?</h2>
+        <p>O que um comando if faz em programação?</p>
+        <button onclick="checkIfAnswer('a')">a) Repete um bloco de código várias vezes</button>
+        <button onclick="checkIfAnswer('b')">b) Define o nome de uma função</button>
+        <button onclick="checkIfAnswer('c')">c) Executa um bloco de código se uma condição for verdadeira</button>
+        <button onclick="checkIfAnswer('d')">d) Armazena uma lista de valores</button>
+        <p id="feedback-if" class="feedback"></p>
+    </section>
+
+    <!-- Quiz 2 -->
+    <section id="quiz-container">
+        <h2>Para que serve o loop "for"?</h2>
+        <p>O que o loop for faz em programação?</p>
+        <button onclick="checkLoopAnswer('a')">a) Declara uma variável que nunca muda</button>
+        <button onclick="checkLoopAnswer('b')">b) Repete um bloco de código um número específico de vezes</button>
+        <button onclick="checkLoopAnswer('c')">c) Remove espaços em branco de um texto</button>
+        <button onclick="checkLoopAnswer('d')">d) Ordena os dados em ordem crescente</button>
+        <p id="feedback-loop" class="feedback"></p>
+    </section>
+
+    <!-- Quiz 3 -->
+    <section id="quiz-container">
+        <h2>O que é uma variável?</h2>
+        <p>Qual é a função de uma variável na programação?</p>
+        <button onclick="checkVariableAnswer('a')">a) Armazenar dados para serem usados no programa</button>
+        <button onclick="checkVariableAnswer('b')">b) Executar código automaticamente</button>
+        <button onclick="checkVariableAnswer('c')">c) Remover dados do sistema</button>
+        <button onclick="checkVariableAnswer('d')">d) Organizar arquivos</button>
+        <p id="feedback-variable" class="feedback"></p>
+    </section>
+
+    <!-- Quiz 4 -->
+    <section id="quiz-container">
+        <h2>Qual é a função de um array?</h2>
+        <p>O que é um array em programação?</p>
+        <button onclick="checkArrayAnswer('a')">a) Um conjunto de funções</button>
+        <button onclick="checkArrayAnswer('b')">b) Um banco de dados relacional</button>
+        <button onclick="checkArrayAnswer('c')">c) Uma lista de valores armazenada em uma única variável</button>
+        <button onclick="checkArrayAnswer('d')">d) Um tipo de dado booleano</button>
+        <p id="feedback-array" class="feedback"></p>
+    </section>
+
+
+
+    </section>
+</div>
+
+<script>
+    function checkIfAnswer(option) {
+        const feedback = document.getElementById("feedback-if");
+        feedback.textContent = option === 'c' ? 
+            "Correto! O if verifica condições." : "Errado! Tente novamente.";
+    }
+
+    function checkLoopAnswer(option) {
+        const feedback = document.getElementById("feedback-loop");
+        feedback.textContent = option === 'b' ? 
+            "Correto! O for repete código um número definido de vezes." : "Errado! Tente novamente.";
+    }
+
+    function checkVariableAnswer(option) {
+        const feedback = document.getElementById("feedback-variable");
+        feedback.textContent = option === 'a' ? 
+            "Correto! Variáveis armazenam dados no programa." : "Errado! Tente novamente.";
+    }
+
+    function checkArrayAnswer(option) {
+        const feedback = document.getElementById("feedback-array");
+        feedback.textContent = option === 'c' ? 
+            "Correto! Arrays armazenam listas de valores." : "Errado! Tente novamente.";
+    }
+
+    function checkReturnAnswer(option) {
+        const feedback = document.getElementById("feedback-return");
+        feedback.textContent = option === 'b' ? 
+            "Correto! return devolve valores de uma função." : "Errado! Tente novamente.";
+    }
+
+    function checkConsoleAnswer(option) {
+        const feedback = document.getElementById("feedback-console");
+        feedback.textContent = option === 'a' ? 
+            "Correto! O console.log exibe informações no console." : "Errado! Tente novamente.";
+    }
+
+    function checkHtmlAnswer(option) {
+        const feedback = document.getElementById("feedback-html");
+        feedback.textContent = option === 'b' ? 
+            "Correto! O HTML estrutura o conteúdo da página." : "Errado! Tente novamente.";
+    }
+</script>
 
 
 
