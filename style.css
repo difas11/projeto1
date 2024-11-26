@@ -1,0 +1,246 @@
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+    background: linear-gradient(135deg, #000000, #2c022c); /* Gradiente do preto para roxo */
+    color: White; /* Texto roxo */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-shadow: 0 0 5px #00f, /* brilho sutil azul */
+                 0 0 10px #00f, 
+                 0 0 20px #00f, 
+                 0 0 30px #00f, 
+                 0 0 40px #00f, 
+                 0 0 50px #00f, 
+                 0 0 75px #00f; /* efeitos de LED azul */
+    border: 2px solid transparent; /* Criação de borda com glow */
+    box-shadow: 0 0 5px #00f, 
+                0 0 10px #00f, 
+                0 0 20px #00f, 
+                0 0 30px #00f; /* efeitos de LED na borda */
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(48, 8, 75, 0.884); /* Roxo escuro com transparência */
+    color: White;
+    padding: 50px;
+    text-align: center;
+    font-size: clamp(1.76em, 1em + 3vw, 1.35em);
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 3px solid #9B30FF; /* Borda roxa neon */
+    box-shadow: 0 0 15px rgba(155, 48, 255, 0.8); /* Efeito neon roxo ao redor */
+    font-size: clamp(1.76em, 1em + 3vw, 1.35em);
+    text-shadow: 0 0 5px #9B30FF, /* brilho sutil */
+                 0 0 10px #9B30FF, 
+                 0 0 20px #9B30FF, 
+                 0 0 30px #9B30FF, 
+                 0 0 40px #9B30FF, 
+                 0 0 50px #9B30FF, 
+                 0 0 75px #9B30FF; /* efeitos de LED roxo */
+    border: 3px solid #9B30FF; /* Borda roxa neon */
+    box-shadow: 0 0 15px rgba(155, 48, 255, 0.8); /* Efeito neon roxo ao redor */
+}
+
+header:hover {
+    box-shadow: 0 0 20px rgba(155, 48, 255, 1), 0 0 30px rgba(155, 48, 255, 0.6); /* Efeito neon mais forte ao passar o mouse */
+}
+
+
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: White;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seção de introdução */
+#intro {
+    text-align: center;
+    padding: 60px 0;
+    background-color: rgba(53, 3, 63, 0.5); /* Background sutil */
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 80%;
+    color: #ffffff; /* Cor do texto */
+    text-shadow: 0 0 5px #00f, /* brilho sutil */
+                 0 0 10px #00f, 
+                 0 0 20px #00f, 
+                 0 0 30px #00f, 
+                 0 0 40px #00f, 
+                 0 0 50px #00f, 
+                 0 0 75px #00f; /* efeitos de LED */
+    border: 2px solid transparent; /* Criação de borda com glow */
+    box-shadow: 0 0 5px #00f, 
+                0 0 10px #00f, 
+                0 0 20px #00f, 
+                0 0 30px #00f; /* efeitos de LED na borda */
+
+}
+
+
+#intro h2 {
+    font-size: 2em;
+}
+
+#intro p {
+    font-size: 1.2em;
+}
+
+/* Seção de cursos */
+#courses {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+/* Cartões de cursos */
+.course-card {
+    background-color: #000; /* Fundo escuro nos cartões */
+    color: White; /* Texto laranja */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 255, 0.7); /* Sombras escuras + neon roxo */
+    text-align: center;
+    width: 380px;
+    margin: 10px;
+    border: 3px solid #9B30FF; /* Borda roxa neon */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.9), 0 0 25px rgba(255, 0, 255, 0.5); /* Efeito neon mais forte ao passar o mouse */
+}
+
+.course-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.course-card p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.course-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.course-card:hover {
+    transform: scale(1.05); /* Efeito de hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #a70ba7; /* Roxo para o botão */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7e047e; /* Roxo mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #33333300; /* Fundo escuro */
+    color: white;
+    text-align: center;
+    padding: 4px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 12px; /* Tamanho de fonte menor */
+}
+
+/* Estilo geral para quizzes */
+#quiz-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(30, 4, 48, 0.95);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(133, 2, 255, 0.8);
+    font-family: Arial, sans-serif;
+}
+
+/* Perguntas */
+#quiz-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #fdfbff;
+    text-align: center;
+}
+
+#quiz-container p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Botões de resposta */
+#quiz-container button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #5809a1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#quiz-container button:hover {
+    background-color: #800080;
+    transform: scale(1.05);
+}
+
+/* Feedback */
+#quiz-container #feedback {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #FFD700; /* Feedback em dourado */
+}
+
+/* Pre-formatado para código */
+pre {
+    background-color: #222;
+    color: #9B30FF;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1em;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
