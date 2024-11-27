@@ -1,303 +1,246 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Curso de Programação">
-    <link rel="stylesheet" href="style.css">
-    <title>CODE MASTER ACADEMY</title>
-</head>
-<body>
-    <header>
-        <h1>CURSO CODEMASTER ACADEMY </h1>
-        <nav>
-            <ul>
-                <li><a href="#python">Python</a></li>
-                <li><a href="#javascript">JavaScript</a></li>
-                <li><a href="#html-css">HTML/CSS</a></li>
-                <li><a href="#php">PHP</a></li>
-                <li><a href="#java">Java</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="intro">
-        <h2>Bem-vindo ao Curso de Programação!</h2>
-        <p>
-            Domine as linguagens de programação mais avançadas e transforme ideias em realidade. Prepare-se para entrar em um mercado de trabalho dinâmico e em constante evolução, onde suas habilidades definirão o futuro da tecnologia. Aprenda a criar soluções inteligentes, desenvolver aplicativos inovadores e construir sistemas que impactam o mundo.
-            
-            Com nossas aulas práticas, projetos desafiadores e orientação dos melhores profissionais do mercado, você estará pronto para liderar a revolução digital. Seja protagonista na era da inteligência artificial, automação e experiências digitais imersivas. O futuro está esperando. E ele começa aqui, com você.
-            
-            </p>
-    </section>
-
-    
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Programação</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #9c169c;
-            color: #f5f5f5;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 20px auto;
-            padding: 50px;
-            background: #ffffff00;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-
-        h1, h2 {
-            color: #eeecf0;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        ul {
-            margin: 0px 0;
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin: 0px 0;
-        }
-
-        .highlight {
-            color: #ffffff;
-            font-weight: bold;
-        }
-
-    </style>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texto Impactante</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #000000, #2c022c);
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-
-        #impact-text {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 30px;
-            line-height: 2;
-            text-align: justify;
-            letter-spacing: 0.1em; /* Deixa o texto mais espaçado horizontalmente */
-            word-spacing: 0.2em; /* Aumenta o espaçamento entre palavras */
-        }
-
-        #impact-text h2 {
-    font-size: 2.4em;
-    margin-bottom: 20px;
-    color: #FFFFFF; /* Cor branca */
-    text-align: center;
-    text-shadow: 0 0 10px rgba(161, 8, 250, 1), 0 0 20px rgba(161, 8, 250, 1), 0 0 30px rgba(161, 8, 250, 1); /* Efeito de LED roxo */
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-        
 
-        #impact-text p {
-            font-size: 1.3em;
-            margin-bottom: 25px;
-        }
+/* Estilos do body */
+body {
+    background: linear-gradient(135deg, #000000, #2c022c); /* Gradiente do preto para roxo */
+    color: White; /* Texto roxo */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-shadow: 0 0 5px #00f, /* brilho sutil azul */
+                 0 0 10px #00f, 
+                 0 0 20px #00f, 
+                 0 0 30px #00f, 
+                 0 0 40px #00f, 
+                 0 0 50px #00f, 
+                 0 0 75px #00f; /* efeitos de LED azul */
+    border: 2px solid transparent; /* Criação de borda com glow */
+    box-shadow: 0 0 5px #00f, 
+                0 0 10px #00f, 
+                0 0 20px #00f, 
+                0 0 30px #00f; /* efeitos de LED na borda */
+}
 
-        #impact-text p:last-of-type {
-            text-align: center;
-            font-weight: bold;
-        }
+/* Cabeçalho */
+header {
+    background-color: rgba(48, 8, 75, 0.884); /* Roxo escuro com transparência */
+    color: White;
+    padding: 50px;
+    text-align: center;
+    font-size: clamp(1.76em, 1em + 3vw, 1.35em);
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 3px solid #9B30FF; /* Borda roxa neon */
+    box-shadow: 0 0 15px rgba(155, 48, 255, 0.8); /* Efeito neon roxo ao redor */
+    font-size: clamp(1.76em, 1em + 3vw, 1.35em);
+    text-shadow: 0 0 5px #9B30FF, /* brilho sutil */
+                 0 0 10px #9B30FF, 
+                 0 0 20px #9B30FF, 
+                 0 0 30px #9B30FF, 
+                 0 0 40px #9B30FF, 
+                 0 0 50px #9B30FF, 
+                 0 0 75px #9B30FF; /* efeitos de LED roxo */
+    border: 3px solid #9B30FF; /* Borda roxa neon */
+    box-shadow: 0 0 15px rgba(155, 48, 255, 0.8); /* Efeito neon roxo ao redor */
+}
 
-        @media (max-width: 768px) {
-            #impact-text {
-                padding: 20px;
-            }
-
-            #impact-text h2 {
-                font-size: 2em;
-            }
-
-            #impact-text p {
-                font-size: 1.1em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div id="impact-text">
-        <h2>Transforme Seu Futuro com a Programação!</h2>
-        <p>
-            Programar não é apenas entender tecnologia; é moldar o futuro. No mundo digital, quem domina a programação detém as ferramentas para inovar, criar e solucionar problemas de forma poderosa. Aprender a programar significa entrar em um universo onde a lógica encontra a criatividade, e cada linha de código pode impactar vidas.
-        </p>
-        <p>
-            Não importa sua experiência ou idade — programação é para todos. É a habilidade que abre portas para novas carreiras, ideias revolucionárias e oportunidades globais. É o caminho para transformar sonhos em realidade e alcançar novos horizontes profissionais.
-        </p>
-        <p>
-            Este é o momento. A tecnologia não espera, e o futuro pertence aos que estão prontos para criá-lo. <strong>Você está pronto para dar o próximo passo?</strong>
-        </p>
-    </div>
-</body>
-</html>
-
-<section id="courses">
-    <div class="course-card" id="python">
-        <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Curso de Python" class="course-image">
-        <h3>Python</h3>
-        <p>Aprenda a linguagem de programação Python, ideal para iniciantes e profissionais, com aplicações em ciência de dados, automação e muito mais.</p>
-        <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target="_blank">
-            <button class="red">Clique Aqui</button>
-        </a>
-    </div>
-    <div class="course-card" id="javascript">
-        <img src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-3630127-3031259.png" alt="Curso de JavaScript" class="course-image">
-        <h3>JavaScript</h3>
-        <p>Domine a principal linguagem de programação para o desenvolvimento web, com foco em front-end e back-end (Node.js).</p>
-        <a href="https://www.youtube.com/watch?v=vEwPnjqWQ-g&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw" target="_blank">
-            <button>Clique Aqui</button>
-        </a>
-    </div>
-    <div class="course-card" id="html-css">
-        <img src="https://png.pngtree.com/png-clipart/20230609/ourmid/pngtree-logo-html-css-icone-and-png-image_7123436.png" alt="Curso de HTML e CSS" class="course-image">
-        <h3>HTML/CSS</h3>
-        <p>Construa websites incríveis com HTML para estrutura e CSS para design responsivo e moderno.</p>
-        <a href="https://www.youtube.com/watch?v=bCFTv8a59PE&list=PLbIBj8vQhvm00J3f3rD33tRuNLem8EgEA" target="_blank">
-            <button>Clique Aqui</button>
-        </a>
-    </div>
-    <div class="course-card" id="php">
-        <img src="https://cdn.iconscout.com/icon/free/png-256/free-php-99-1175127.png?f=webp" alt="Curso de PHP" class="course-image">
-        <h3>PHP</h3>
-        <p>Explore o desenvolvimento de sites dinâmicos com PHP, uma das linguagens mais utilizadas no backend.</p>
-        <a href="https://www.youtube.com/watch?v=O73xbQvGhHk&list=PL0N5TAOhX5E9eJ9Ix6YUIgEw3lNmaIEE9" target="_blank">
-            <button>Clique Aqui</button>
-        </a>
-    </div>
-    <div class="course-card" id="java">
-        <img src="https://cdn-icons-png.flaticon.com/512/919/919854.png" alt="Curso de Java" class="course-image">
-        <h3>Java</h3>
-        <p>Aprenda Java, uma das linguagens mais populares para desenvolvimento de aplicativos e sistemas corporativos.</p>
-        <a href="https://www.youtube.com/watch?v=mRryrODqQcw&list=PLJ0AcghBBWSi6nK2CUkw9ngvwWB1gE8mL&index=1" target="_blank">
-            <button>Clique Aqui</button>
-        </a>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2024 Curso de Programação | Todos os direitos reservados</p>
-</footer>
-</body>
-</html>
-
-<div id="quiz-main">
-    <!-- Quiz 1 -->
-    <section id="quiz-container">
-        <h2>O que é "if"?</h2>
-        <p>O que um comando if faz em programação?</p>
-        <button onclick="checkIfAnswer('a')">a) Repete um bloco de código várias vezes</button>
-        <button onclick="checkIfAnswer('b')">b) Define o nome de uma função</button>
-        <button onclick="checkIfAnswer('c')">c) Executa um bloco de código se uma condição for verdadeira</button>
-        <button onclick="checkIfAnswer('d')">d) Armazena uma lista de valores</button>
-        <p id="feedback-if" class="feedback"></p>
-    </section>
-
-    <!-- Quiz 2 -->
-    <section id="quiz-container">
-        <h2>Para que serve o loop "for"?</h2>
-        <p>O que o loop for faz em programação?</p>
-        <button onclick="checkLoopAnswer('a')">a) Declara uma variável que nunca muda</button>
-        <button onclick="checkLoopAnswer('b')">b) Repete um bloco de código um número específico de vezes</button>
-        <button onclick="checkLoopAnswer('c')">c) Remove espaços em branco de um texto</button>
-        <button onclick="checkLoopAnswer('d')">d) Ordena os dados em ordem crescente</button>
-        <p id="feedback-loop" class="feedback"></p>
-    </section>
-
-    <!-- Quiz 3 -->
-    <section id="quiz-container">
-        <h2>O que é uma variável?</h2>
-        <p>Qual é a função de uma variável na programação?</p>
-        <button onclick="checkVariableAnswer('a')">a) Armazenar dados para serem usados no programa</button>
-        <button onclick="checkVariableAnswer('b')">b) Executar código automaticamente</button>
-        <button onclick="checkVariableAnswer('c')">c) Remover dados do sistema</button>
-        <button onclick="checkVariableAnswer('d')">d) Organizar arquivos</button>
-        <p id="feedback-variable" class="feedback"></p>
-    </section>
-
-    <!-- Quiz 4 -->
-    <section id="quiz-container">
-        <h2>Qual é a função de um array?</h2>
-        <p>O que é um array em programação?</p>
-        <button onclick="checkArrayAnswer('a')">a) Um conjunto de funções</button>
-        <button onclick="checkArrayAnswer('b')">b) Um banco de dados relacional</button>
-        <button onclick="checkArrayAnswer('c')">c) Uma lista de valores armazenada em uma única variável</button>
-        <button onclick="checkArrayAnswer('d')">d) Um tipo de dado booleano</button>
-        <p id="feedback-array" class="feedback"></p>
-    </section>
+header:hover {
+    box-shadow: 0 0 20px rgba(155, 48, 255, 1), 0 0 30px rgba(155, 48, 255, 0.6); /* Efeito neon mais forte ao passar o mouse */
+}
 
 
 
-    </section>
-</div>
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-<script>
-    function checkIfAnswer(option) {
-        const feedback = document.getElementById("feedback-if");
-        feedback.textContent = option === 'c' ? 
-            "Correto! O if verifica condições." : "Errado! Tente novamente.";
-    }
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-    function checkLoopAnswer(option) {
-        const feedback = document.getElementById("feedback-loop");
-        feedback.textContent = option === 'b' ? 
-            "Correto! O for repete código um número definido de vezes." : "Errado! Tente novamente.";
-    }
+nav ul li a {
+    color: White;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    function checkVariableAnswer(option) {
-        const feedback = document.getElementById("feedback-variable");
-        feedback.textContent = option === 'a' ? 
-            "Correto! Variáveis armazenam dados no programa." : "Errado! Tente novamente.";
-    }
+/* Seção de introdução */
+#intro {
+    text-align: center;
+    padding: 60px 0;
+    background-color: rgba(53, 3, 63, 0.5); /* Background sutil */
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 80%;
+    color: #ffffff; /* Cor do texto */
+    text-shadow: 0 0 5px #00f, /* brilho sutil */
+                 0 0 10px #00f, 
+                 0 0 20px #00f, 
+                 0 0 30px #00f, 
+                 0 0 40px #00f, 
+                 0 0 50px #00f, 
+                 0 0 75px #00f; /* efeitos de LED */
+    border: 2px solid transparent; /* Criação de borda com glow */
+    box-shadow: 0 0 5px #00f, 
+                0 0 10px #00f, 
+                0 0 20px #00f, 
+                0 0 30px #00f; /* efeitos de LED na borda */
 
-    function checkArrayAnswer(option) {
-        const feedback = document.getElementById("feedback-array");
-        feedback.textContent = option === 'c' ? 
-            "Correto! Arrays armazenam listas de valores." : "Errado! Tente novamente.";
-    }
+}
 
-    function checkReturnAnswer(option) {
-        const feedback = document.getElementById("feedback-return");
-        feedback.textContent = option === 'b' ? 
-            "Correto! return devolve valores de uma função." : "Errado! Tente novamente.";
-    }
 
-    function checkConsoleAnswer(option) {
-        const feedback = document.getElementById("feedback-console");
-        feedback.textContent = option === 'a' ? 
-            "Correto! O console.log exibe informações no console." : "Errado! Tente novamente.";
-    }
+#intro h2 {
+    font-size: 2em;
+}
 
-    function checkHtmlAnswer(option) {
-        const feedback = document.getElementById("feedback-html");
-        feedback.textContent = option === 'b' ? 
-            "Correto! O HTML estrutura o conteúdo da página." : "Errado! Tente novamente.";
-    }
-</script>
+#intro p {
+    font-size: 1.2em;
+}
+
+/* Seção de cursos */
+#courses {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+/* Cartões de cursos */
+.course-card {
+    background-color: #000; /* Fundo escuro nos cartões */
+    color: White; /* Texto laranja */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 255, 0.7); /* Sombras escuras + neon roxo */
+    text-align: center;
+    width: 380px;
+    margin: 10px;
+    border: 3px solid #9B30FF; /* Borda roxa neon */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.9), 0 0 25px rgba(255, 0, 255, 0.5); /* Efeito neon mais forte ao passar o mouse */
+}
+
+.course-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.course-card p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.course-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.course-card:hover {
+    transform: scale(1.05); /* Efeito de hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #a70ba7; /* Roxo para o botão */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7e047e; /* Roxo mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #33333300; /* Fundo escuro */
+    color: white;
+    text-align: center;
+    padding: 4px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 12px; /* Tamanho de fonte menor */
+}
+
+/* Estilo geral para quizzes */
+#quiz-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(30, 4, 48, 0.95);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(133, 2, 255, 0.8);
+    font-family: Arial, sans-serif;
+}
+
+/* Perguntas */
+#quiz-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #fdfbff;
+    text-align: center;
+}
+
+#quiz-container p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Botões de resposta */
+#quiz-container button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #5809a1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#quiz-container button:hover {
+    background-color: #800080;
+    transform: scale(1.05);
+}
+
+/* Feedback */
+#quiz-container #feedback {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #FFD700; /* Feedback em dourado */
+}
+
+/* Pre-formatado para código */
+pre {
+    background-color: #222;
+    color: #9B30FF;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1em;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
